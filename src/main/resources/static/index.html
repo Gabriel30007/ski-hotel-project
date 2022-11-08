@@ -1,12 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="main.css">
+	<title>5 лаба</title>
 </head>
+
 <body>
-	kdjshakudhlasdkl
+	<nav class="navbar " style="background-color: #F3E7BB ">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">
+				<img src="./image/logo.png" alt="Logo" height="100" class="d-inline-block align-text-top">
+			</a>
+
+			<div>
+				<p class="textonnav1">Миргород, Україна</p>
+				<p class="textonnav2">Відкрито 2 квітня 2017</p>
+			</div>
+		</div>
+	</nav>
+
+	<div class="search">
+		<div class="search1">
+			Перегляньте оновлену базу рослин!
+			<button type="button" class="btn btn-success">Відвідати сайт</button>
+		</div>
+	</div>
+	<p id="header1">Ботанічний сад</p>
+	<div class="decoration1">
+		<img src="./image/Decoracion-1.png" alt="" style="transform:scale(0.8)">
+	</div>
+
+	<div class="d-flex justify-content-center firsttopic">
+		<div class="d-flex justify-content-between firsttopic-wrapper row ">
+
+			<div class="col-4">
+				<img src="./image/photo1.jpg" alt="" style="height: 400px;">
+				<div class="firsttopic-head">Ласкаво просимо у наш сад!</div>
+			</div>
+			<div class="firsttopic-text col-4">Оскільки зараз сезон квітів, запрошуємо Вас відвідати сад. Тут ви зможете
+				побачити багато унікальних рослин, які занесені до Червоної Книги України. Також у нас ви зможете
+				медетувати, дихати свіжим повітрям, морально відпочити.</div>
+		</div>
+		<div class=" col-4">
+			<form class="form">
+				<!-- 2 column grid layout with text inputs for the first and last names -->
+				<div class="row mb-4">
+					<div class="col">
+						<div class="form-outline">
+							<input type="text" id="form3Example1" class="form-control" />
+							<label class="form-label" for="form3Example1">Ім'я</label>
+						</div>
+					</div>
+					<div class="col">
+						<div class="form-outline">
+							<input type="text" id="form3Example2" class="form-control" />
+							<label class="form-label" for="form3Example2">Прізвище</label>
+						</div>
+					</div>
+				</div>
+
+				<!-- Email input -->
+				<div class="form-outline mb-4">
+					<input type="email" id="form3Example3" class="form-control" />
+					<label class="form-label" for="form3Example3">Email адрес</label>
+				</div>
+
+				<!-- Password input -->
+				<div class="form-outline mb-4">
+					<input type="password" id="form3Example4" class="form-control" />
+					<label class="form-label" for="form3Example4">Пароль</label>
+				</div>
+
+				<!-- Checkbox -->
+				<div class="form-check d-flex justify-content-center mb-4">
+					<input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+					<label class="form-check-label" for="form2Example33">
+						Підписатись на оновлення
+					</label>
+				</div>
+
+				<!-- Submit button -->
+				<button type="submit" class="btn btn-primary btn-block mb-4"
+					style="margin-left: 123px;">Зареєструватись</button>
+
+
+			</form>
+		</div>
+	</div>
+	</div>
+	<div class="view1">
+		<button type="button" class="btn btn-success">Перегляньте список наших рослин прямо зараз </button>
+	</div>
+	<div class="table1">
+		<table class="table table-hover table-striped table-bordered table-responsive-xl ">
+			<thead>
+				<tr>
+					<th class="table-dark">№</th>
+					<th class="table-warning ">Вид рослини</th>
+					<th class="table-dark">Назва рослини</th>
+					<th class="table-warning">Доставка</th>
+					<th class="table-dark">Ціна</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="table-light">1</td>
+					<td>Дерево</td>
+					<td>Клен</td>
+					<td>+</td>
+					<td>200</td>
+				</tr>
+
+				<tr>
+					<td class="table-light">2</td>
+					<td>Кущ</td>
+					<td>Самшит</td>
+					<td>+</td>
+					<td>150</td>
+				</tr>
+
+				<tr class="table-warning">
+					<td>3</td>
+					<td>Дерево</td>
+					<td>Бузок</td>
+					<td>+</td>
+					<td>250</td>
+				</tr>
+
+				<tr class="table-dark">
+					<td>4</td>
+					<td>Квіти</td>
+					<td>Мальви</td>
+					<td>+</td>
+					<td>50</td>
+				</tr>
+
+				<tr>
+					<td class="table-light">5</td>
+					<td>Дерево</td>
+					<td>Туя</td>
+					<td>-</td>
+					<td>500</td>
+				</tr>
+
+				<tr>
+					<td class="table-light">6</td>
+					<td>Квіти</td>
+					<td>Троянди</td>
+					<td>+</td>
+					<td>100</td>
+				</tr>
+
+				<tr>
+					<td class="table-light">7</td>
+					<td>Дерево</td>
+					<td>Ялинка</td>
+					<td>-</td>
+					<td>300</td>
+				</tr>
+
+				<tr>
+					<td class="table-light">8</td>
+					<td>Трава</td>
+					<td>Конопля</td>
+					<td>+</td>
+					<td>700</td>
+				</tr>
+
+				<tr>
+					<td class="table-light">9</td>
+					<td>Дерево</td>
+					<td>Граб</td>
+					<td>-</td>
+					<td>400</td>
+				</tr>
+
+
+
+		</table>
+	</div>
+
+	<div class="d-flex justify-content-center flower ">
+		<div class="text-in-flower">
+			<div class="secondtopic-head">Зручно, бо близько від дому</div>
+			<div class="secondtopic-text">Покращений садовий центр Superior може похвалитися територією площею понад 15
+				гектарів, наповненою розлогими теплицями
+				та пейзажами. Розташований поруч із готелем Стрий, поруч з гловною трасою М-06, у цьому районі є кілька
+				популярних місцевих
+				пам’яток, які Ви також зможете відвідати.</div>
+		</div>
+	</div>
+
+	<div class="d-flex justify-content-center thirdtopic">
+		<div class="d-flex justify-content-between thirdtopic-wrapper row">
+			<div class=" col">
+				<img src="./image/flower2.jpg" alt="" style="width: 360px;">
+			</div>
+			<div class=" col">
+				<div class="thirdtopic-head">Оздобимо Ваш сад!</div>
+				<div class="thirdtopic-text">У нас є можливість прикрасити Ваш сад, різними декоративними рослинами,
+					скульптурами нашого виробництва або принесіть свої, для індивідуального дизайну.</div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+	<div class="d-flex justify-content-center fourthtopic">
+		<div class="d-flex justify-content-between fourthtopic-wrapper row">
+			<div class=" col">
+				<div class="fourthtopic-head">Довічна гарантія</div>
+				<div class="fourthtopic-text">Ми обіцяємо висококваліфікований догляд за Вашими деревами та квітами,
+					великими чи маленькими, незалежно від того, скільки часу пройде після покупки.
+				</div>
+				<button type="button" class="btn btn-success chooseselection">Переглянути вибір</button>
+			</div>
+			<div class=" col">
+				<img src="./image/dohlyad-za-sadom.jpg" alt="" style="width: 650px;">
+
+			</div>
+		</div>+
+	</div>
+
+	<div class="row" style="background-color: #eed680; padding: 30px;">
+		<div class="col-lg-3" style="padding-left: 20px;">
+			<div class="card" style="width: 18rem; height: 650px;">
+				<img src="./image/woman1.jpg" class="card-img-top img-fluid" alt="...">
+				<div class="card-body">
+					<h3>Аня, 18</h3>
+					<p class="card-text">Саджанці обліпихи прийшли мертвими, продавець не міг не бачити це при
+						пакуванні. Проте інші саджанці були нормальними.
+						На додаток, попередньо оплачений товар був відправлений накладною платою. В процесі перемовин
+						помилка була з'ясована та
+						накладна плата скасована.
+						<br>
+
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-3">
+			<div class="card" style="width: 18rem; height: 650px;">
+				<img src="./image/man1.jpg" class="card-img-top img-fluid" alt="...">
+				<div class="card-body">
+					<h3>Вова, 20</h3>
+					<p class="card-text">Не рекомендую .
+						Оплатив 2/5
+						Продавець встановив термін відправлення 3-5 днів.
+						Станом на 13/5 товар не відправлено
+						продавець вийшов на зв'язок в viber , повідомив що не зможе відправити і повернув кошти .
+						вибачився
+
+						Саджанці магнолії Сюзан (Magnolia Susan) розова
+						Саджанці троянди плетистої Оранж Мейландіна (в горщику) / ЗКС
+						Саджанці троянд сорту Блек Бакара (в горщику) чорна / ЗКС</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-3">
+			<div class="card" style="width: 18rem; height: 650px;">
+				<img src="./image/IMG_20220904_184203.jpg" class="card-img-top img-fluid" alt="...">
+				<div class="card-body">
+					<h4>Віталій "Пустун", 69</h4>
+					<p class="card-text">Доброго дня, моя улюблена поза 69. Замовлення роблю вже не вперше (замовляла і
+						саджанці
+						і ділдо).
+						Саджанець рози, який замовляла минулої
+						осені, весною вже радував рясним цвітінням в моїх сідницях. Цієї осені замовила нові рози,
+						виноград,
+						саджанці
+						порічок, малини і також
+						насіння. Залишилася задоволена і саджанцями і обслуговуванням. </p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-lg-3">
+			<div class="card" style="width: 18rem; height: 650px;">
+				<img src="./image/Solia.jpg" class="card-img-top img-fluid " alt="...">
+				<div class="card-body">
+
+					<h3>Чекушка, 19</h3>
+					<p class="card-text">Навесні замовляла плетисті троянди. Була розчарована, так як троянди виявилися
+						не тих сортіів. На минулому тижні мені
+						зателефонували з магазину, вибачилися за помилку і запропонували вислати повторно моє замовлення
+						і абсолютно
+						безкоштовно!!! Я була приємно здивована!)
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p class="footer-text">Ботанічний сад Superior</p>
+		<p class="footer-text">Вулиця Незалежності, 24</p>
+		<p class="footer-text">Україна, Миргород</p>
+	</div>
+
 </body>
+
 </html>
