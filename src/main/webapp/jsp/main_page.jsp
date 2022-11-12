@@ -16,36 +16,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style_main.css">
+<%--    <link rel="stylesheet" href="../resources/static/css/style_main.css">--%>
+     <link rel="stylesheet" href="css/style_main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <canvas id="canvas"></canvas>
-    <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top navbarstyle p-0 d-flex justify-content-between">
-        <div class="logo">
-            <a class="navbar-brand mx-3" href="#">
-                <img src="img/logo.png" alt="Avatar Logo" style="width:130px; ">
-            </a>
-        </div>
-        <div class="buttons">
-            <ul class="navbar-nav navbar">
-                <li class="nav-item price_button">
+<canvas id="canvas"></canvas>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbarstyle p-0">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+<%--            <img src="../resources/static/img/logo.png" alt="Avatar Logo" style="width:130px; ">--%>
+             <img src="img/logo.png" alt="Avatar Logo" style="width:130px; ">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item price_button mx-auto">
                     <a class="nav-link active" href="#">Ціна</a>
                 </li>
-                <li class="nav-item location_button">
+                <li class="nav-item location_button mx-auto">
                     <a class="nav-link" href="#">Локація</a>
                 </li>
-                <li class="nav-item abonement_button">
+                <li class="nav-item abonement_button mx-auto">
                     <a class="nav-link" href="#">Абонемент</a>
                 </li>
-                <li class="nav-item dropdown navbar more_dropdown">
-                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
-                    <ul class="dropdown-menu dropdown-menu-end">
+                <li class="nav-item dropdown more_dropdown mx-auto pb-lg-0 pb-2">
+                    <a class="nav-link dropdown-toggle " href="#" role="button"
+                       data-bs-toggle="dropdown">Dropdown</a>
+                    <ul class="dropdown-menu dropdown-menu-end text-center text-lg-start">
                         <li><a class="dropdown-item" href="#">Link</a></li>
                         <li><a class="dropdown-item" href="#">Another link</a></li>
                         <li><a class="dropdown-item" href="#">A third link</a></li>
@@ -53,8 +59,10 @@
                 </li>
             </ul>
         </div>
-    </nav>
-    <script src="js/a.js"></script>
+    </div>
+</nav>
+<%--<script src="../resources/static/js/a.js"></script>--%>
+ <script src="js/a.js"></script>
 </body>
 
 </html>
