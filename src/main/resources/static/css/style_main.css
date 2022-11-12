@@ -1,0 +1,48 @@
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(bottom,
+      rgb(105, 173, 212) 0%,
+      rgb(23, 82, 145) 84%);
+  background-image: -o-linear-gradient(bottom,
+      rgb(105, 173, 212) 0%,
+      rgb(23, 82, 145) 84%);
+  background-image: -moz-linear-gradient(bottom,
+      rgb(105, 173, 212) 0%,
+      rgb(23, 82, 145) 84%);
+  background-image: -webkit-linear-gradient(bottom,
+      rgb(105, 173, 212) 0%,
+      rgb(23, 82, 145) 84%);
+  background-image: -ms-linear-gradient(bottom,
+      rgb(105, 173, 212) 0%,
+      rgb(23, 82, 145) 84%);
+
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(0, rgb(105, 173, 212)),
+      color-stop(0.84, rgb(23, 82, 145)));
+}
+
+.font-Source-Serif-Pro {
+  font-family: "Source Serif Pro", serif;
+}
+
+.navbarstyle {
+  opacity: 0.96;
+}
+
+.price_button,
+.location_button,
+.abonement_button,
+.more_dropdown {
+  color: black;
+  font-size: 35px;
+  font-family: "Source Serif Pro", serif;
+  padding: 0 10px;
+}
+
+.dropdown-menu li {
+  font-size: 23px;
+}

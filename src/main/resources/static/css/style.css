@@ -52,13 +52,6 @@ body {
   color: #fff;
 }
 
-.forms {
-  display: flex;
-  align-items: flex-start;
-
-  margin-top: 30px;
-}
-
 .form-wrapper {
   animation: hideLayer 0.3s ease-out forwards;
 }
@@ -92,7 +85,6 @@ body {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  padding: 0;
   text-transform: uppercase;
   font-family: inherit;
   font-size: 16px;
@@ -151,7 +143,7 @@ body {
 
 .form {
   overflow: hidden;
-  min-width: 260px;
+  min-width: 235px;
   margin-top: 50px;
   padding: 30px 25px;
   border-radius: 5px;
@@ -311,18 +303,22 @@ body {
 
 .btn-login {
   color: #fbfdff;
-  background: #a7e245;
+  background: #2D7B01;
   transform: translateX(-30%);
 }
 
 .btn-signup {
-  color: #a7e245;
+  color: #2D7B01;
   background: #fbfdff;
-  box-shadow: inset 0 0 0 2px #a7e245;
+  box-shadow: inset 0 0 0 2px #2D7B01;
   transform: translateX(30%);
 }
 
 .introducing {
-  color: red;
+  opacity: 0.95;
+  border-radius: 20px;
+  width: 200px;
+  background-color: #D9DBEA;
+  color: #342f2f;
   z-index: 1;
 }
