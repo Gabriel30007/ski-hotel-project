@@ -25,20 +25,24 @@ canvas {
       color-stop(0.84, rgb(23, 82, 145)));
 }
 
+.font-Source-Serif-Pro {
+  font-family: "Source Serif Pro", serif;
+}
+
 .navbarstyle {
   opacity: 0.96;
 }
 
-.more_dropdown {
-  color: black;
-  font-size: 32px;
-  font-family: "Source Serif Pro", serif;
-}
-
 .price_button,
 .location_button,
-.abonement_button {
+.abonement_button,
+.more_dropdown {
   color: black;
   font-size: 35px;
   font-family: "Source Serif Pro", serif;
+  padding: 0 10px;
+}
+
+.dropdown-menu li {
+  font-size: 23px;
 }

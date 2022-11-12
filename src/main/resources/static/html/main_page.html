@@ -19,14 +19,14 @@
 
 <body>
     <canvas id="canvas"></canvas>
-    <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top navbarstyle p-0 ">
+    <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top navbarstyle p-0 d-flex justify-content-between">
         <div class="logo">
             <a class="navbar-brand mx-3" href="#">
                 <img src="../img/logo.png" alt="Avatar Logo" style="width:130px; ">
             </a>
         </div>
-        <div class="buttons ">
-            <ul class="navbar-nav navbar ">
+        <div class="buttons">
+            <ul class="navbar-nav navbar">
                 <li class="nav-item price_button">
                     <a class="nav-link active" href="#">Ціна</a>
                 </li>
@@ -36,10 +36,9 @@
                 <li class="nav-item abonement_button">
                     <a class="nav-link" href="#">Абонемент</a>
                 </li>
-
                 <li class="nav-item dropdown navbar more_dropdown">
                     <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="#">Link</a></li>
                         <li><a class="dropdown-item" href="#">Another link</a></li>
                         <li><a class="dropdown-item" href="#">A third link</a></li>
@@ -47,7 +46,6 @@
                 </li>
             </ul>
         </div>
-
     </nav>
     <script src="../js/a.js"></script>
 </body>
