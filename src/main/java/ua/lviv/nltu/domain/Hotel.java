@@ -18,13 +18,13 @@ public class Hotel {
 
     public Hotel(int countDays) {
         this.countDays = countDays;
-        this.price=countDays*600;
+        this.price=countDays;
     }
 
     public Hotel(Integer id, int countDays) {
         this.id = id;
         this.countDays = countDays;
-        this.price=countDays*600;
+        this.price=countDays;
     }
 
     public Integer getId() {
