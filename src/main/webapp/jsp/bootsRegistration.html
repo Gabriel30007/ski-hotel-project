@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../resources/static/css/style_main.css">
     <link rel="stylesheet" href="../../resources/static/css/style_bootsRegistration.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,6 +19,40 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbarstyle p-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../../resources/static/img/logo.png" alt="Avatar Logo" style="width:130px; ">
+                <!-- <img src="img/logo.png" alt="Avatar Logo" style="width:130px; "> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item price_button mx-auto">
+                        <a class="nav-link active" href="#">Ціна</a>
+                    </li>
+                    <li class="nav-item location_button mx-auto">
+                        <a class="nav-link" href="#">Локація</a>
+                    </li>
+                    <li class="nav-item abonement_button mx-auto">
+                        <a class="nav-link" href="#">Абонемент</a>
+                    </li>
+                    <li class="nav-item dropdown more_dropdown mx-auto pb-lg-0 pb-2">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu dropdown-menu-end text-center text-lg-start">
+                            <li><a class="dropdown-item" href="/boots-registration">boots add</a></li>
+                            <li><a class="dropdown-item" href="/poles-registration">poles add</a></li>
+                            <li><a class="dropdown-item" href="/skiing-registration">Skiing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br><br><br><br>
     <div class="top row">
         <div class="topic col-md-10"> Додавання взуття </div>
         <div class="button col-md-2"><button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
