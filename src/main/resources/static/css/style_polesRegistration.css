@@ -1,0 +1,10 @@
+
+.topic{
+    text-align: center;
+    font-size: 30px;
+}
+
+.wrap{
+    justify-content:space-between;
+    padding: 30px;
+}
