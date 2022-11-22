@@ -41,7 +41,8 @@
                         <a class="nav-link" href="#">Абонемент</a>
                     </li>
                     <li class="nav-item dropdown more_dropdown mx-auto pb-lg-0 pb-2">
-                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                        <a class="nav-link dropdown-toggle " href="#" role="button"
+                            data-bs-toggle="dropdown">Dropdown</a>
                         <ul class="dropdown-menu dropdown-menu-end text-center text-lg-start">
                             <li><a class="dropdown-item" href="/boots-registration">boots add</a></li>
                             <li><a class="dropdown-item" href="/poles-registration">poles add</a></li>
@@ -54,23 +55,42 @@
     </nav>
     <br><br><br><br>
     <div class="top row">
-        <div class="topic col-md-10"> Додавання взуття </div>
-        <div class="button col-md-2"><button type="button" class="btn btn-secondary" data-bs-toggle="tooltip"
-                data-bs-placement="bottom" title="1.Введіть розмір 2.Введіть ціну 3.Оберіть фото 4.Підтвердіть">
-                Підказка
+        <div class="topic col-sm-10">Додавання взуття</div>
+        <div class="button col-md-1"><button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                data-bs-target="#myModal">
+                Допомога
             </button>
         </div>
     </div>
-   
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p>1. Введіть розмір </p>
+                    <p>2. Введіть ціну</p>
+                    <p>3. Оберіть фото</p>
+                    <p>4. Підтвердіть</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <form:form method="POST" action="${contextPath}/bootsSave" enctype="multipart/form-data">
         <div class="wrap row">
-            <input type="number" name="size" placeholder="Size" class="form-control, col-xl-2" autofocus="true">
+            <input type="number" name="size" placeholder="Розмір ноги" class="form-control, col-xl-2" autofocus="true">
 
-            <input type="number" name="price" placeholder="Price" class="form-control, col-xl-2" autofocus="true">
+            <input type="number" name="price" placeholder="Ціна" class="form-control, col-xl-2" autofocus="true">
 
             <input type="file" name="image" class="form-control, col-xl-3">
 
-            <button class="btn btn-lg btn-primary btn-block, col-xl-3" type="submit">Submit</button>
+            <button class="btn btn-lg btn-primary btn-block, col-xl-3" type="submit">Підтвердити</button>
         </div>
     </form:form>
 </body>

@@ -54,18 +54,14 @@
         </div>
     </nav>
     <br><br><br><br>
-    <form:form method="POST" action="${contextPath}/skiingSave" enctype="multipart/form-data">
-
         <div class="top row">
-            <div class="topic col-md-10"> Додавання лиж</div>
-            <div class="button col-md-2"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+            <div class="topic col-sm-10"> Додавання лиж</div>
+            <div class="button col-md-1"><button type="button" class="btn btn-secondary" data-bs-toggle="modal"
                     data-bs-target="#myModal">
-                    Підказка
+                    Допомога
                 </button>
             </div>
         </div>
-        <div class="topic"><a></a></div>
-
         </div>
 
         <!-- The Modal -->
@@ -86,14 +82,14 @@
                 </div>
             </div>
         </div>
-
+<form:form method="POST" action="${contextPath}/skiingSave" enctype="multipart/form-data">
         <div class="wrap row ">
-            <input type="number" name="price" placeholder="Price" class="form-control, input-price col-xl-4"
+            <input type="number" name="price" placeholder="Ціна" class="form-control, input-price col-xl-3"
                 autofocus="true">
 
             <input type="file" name="image" class="form-control, col-xl-3">
 
-            <button class="btn btn-lg btn-primary btn-block col-xl-3" type="submit">Submit</button>
+            <button class="btn btn-lg btn-primary btn-block col-xl-3" type="submit">Підтвердити</button>
         </div>
 
     </form:form>
