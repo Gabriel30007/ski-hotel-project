@@ -32,113 +32,13 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-/* end of common styles */
-
-/*Header*/
-.header {
-  z-index: 100;
-  height: 100vh;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url("https://thepage.fra1.digitaloceanspaces.com/live/media/108739/conversions/290202be08c1cd7fb76b-a698-b402-d702-8390fb1bd546-large.jpg?v=1605499450") center no-repeat;
-  background-size: cover;
-}
-
-.brand {
-  z-index: 100;
-  display: flex;
-  cursor: pointer;
-}
-
-.hotel-heading {
-  z-index: 100;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 2.7rem;
-  font-weight: 400;
-  color: #deaa86;
-  letter-spacing: 0.2rem;
-}
-
-.banner {
-  font-family: "Source Serif Pro", serif;
-  z-index: 100;
-  color: #ddd;
-  height: 65rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.banner-heading {
-  z-index: 100;
-  font-family: "Source Serif Pro", serif;
-  font-size: 7rem;
-  font-weight: 400;
-  margin-bottom: 0;
-  animation: anim 2s;
-}
-
-.banner-paragraph {
-  z-index: 100;
-  font-size: 3.5rem;
-  font-weight: 300;
-  animation: anim 1.5s 0.5s backwards;
-}
-
-.banner-button {
-  z-index: 100;
-  width: 21rem;
-  padding: 1.2rem 2rem;
-  color: #333;
-  letter-spacing: 0.1rem;
-  border: none;
-  outline: none;
-  border-radius: 10rem;
-  background: linear-gradient(to right, rgb(0, 179, 255), rgb(32, 144, 218));
-  cursor: pointer;
-  animation: anim 1s 1s backwards;
-  font-size: large;
-}
-
-.banner-button:hover {
-  z-index: 100;
-  background: linear-gradient(to left, golden, goldenrod);
-}
-
-.banner-button:active {
-  z-index: 100;
-  transform: translatey(0.2rem);
-}
-
-@keyframe anim {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-/*end of header*/
-
 /*About Us*/
 .about-us {
   display: flex;
   background-color: #ddd;
 }
 
-.about-us-content {
-  flex: 0 1 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10rem;
-  box-sizing: border-box;
-}
-
-.about-us-heading {
+.location-heading {
   font-family: "Josefin Sans", sans-serif;
   font-size: 4rem;
   font-weight: 300;
