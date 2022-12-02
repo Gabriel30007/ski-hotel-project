@@ -72,15 +72,16 @@
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21208.114927360068!2d24.387415378570548!3d48.3602476067503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473718741045db5d%3A0xaa146186b1d727d2!2sVODA%20club!5e0!3m2!1suk!2sua!4v1669884752523!5m2!1suk!2sua"
 					width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade" name="mapframe"></iframe>
-				<button onclick="getLocation()">Try It</button>
+				<div>
+					<p class="navigator pt-3 fw-bolder">Навігатор</p>
 				<form method="get" action="https://www.google.com/maps" target="mapframe">
-					<input name="saddr" type="text" id="saddr">
-					<input name="output" type="hidden" value="embed">
-					<input name="f" type="hidden" value="d">
-					<input name="z" type="hidden" value="11">
+					<button onclick="getLocation()" class="custom-btn btn-6"><span>Отримати координати</span></button>
+					<input name="saddr" type="text" id="saddr" class="custom-btn btn-6">
+					<input name="output" type="hidden" value="embed" class="custom-btn btn-6">
 					<input name="daddr" type="hidden" id="daddr" value="VODA club, узбережжя великого озера Молодості, Поляниця, Івано-Франківська область, 78593">
-					<input type="submit" name="Submit" value="Submit">
+					<button type="submit" name="Submit" class="custom-btn btn-6" value="Submit"><span>Побудувати маршрут</span></button>
 				</form>
+				</div>
 				<script>
 					var x = document.getElementById("saddr");
 					function getLocation() {
