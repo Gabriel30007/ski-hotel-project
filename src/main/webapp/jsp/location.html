@@ -74,13 +74,16 @@
 					referrerpolicy="no-referrer-when-downgrade" name="mapframe"></iframe>
 				<div>
 					<p class="navigator pt-3 fw-bolder">Навігатор</p>
-				<form method="get" action="https://www.google.com/maps" target="mapframe">
-					<button onclick="getLocation()" class="custom-btn btn-6"><span>Отримати координати</span></button>
-					<input name="saddr" type="text" id="saddr" class="custom-btn btn-6">
-					<input name="output" type="hidden" value="embed" class="custom-btn btn-6">
-					<input name="daddr" type="hidden" id="daddr" value="VODA club, узбережжя великого озера Молодості, Поляниця, Івано-Франківська область, 78593">
-					<button type="submit" name="Submit" class="custom-btn btn-6" value="Submit"><span>Побудувати маршрут</span></button>
-				</form>
+					<form method="get" action="https://www.google.com/maps" target="mapframe">
+						<button onclick="getLocation()" class="custom-btn btn-6"><span>Отримати
+								координати</span></button>
+						<input name="saddr" type="text" id="saddr" class="custom-btn btn-6">
+						<input name="output" type="hidden" value="embed" class="custom-btn btn-6">
+						<input name="daddr" type="hidden" id="daddr"
+							value="VODA club, узбережжя великого озера Молодості, Поляниця, Івано-Франківська область, 78593">
+						<button type="submit" name="Submit" class="custom-btn btn-6" value="Submit"><span>Побудувати
+								маршрут</span></button>
+					</form>
 				</div>
 				<script>
 					var x = document.getElementById("saddr");
@@ -114,6 +117,75 @@
 					}
 				</script>
 			</div>
+		</div>
+
+		<div class="photo"><img src="/src/main/resources/static/img/mountain.png" alt="" class="photo"></div>
+
+		<div class="accordion accordion-flush accordion row d-flex flex-column justify-content-center align-items-center "
+			id="accordionFlushExample">
+			<div class="accordion-item col-7 ">
+				<h2 class="accordion-header" id="flush-headingOne">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+						<p class="accordion_text">Літаком</p>
+					</button>
+				</h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+					data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">Літаком: через наступні аеропорти
+						<ul>
+							<li>Івано-Франківськ (100 км)</li>
+							<li>Львів (250 км)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item col-7">
+				<h2 class="accordion-header" id="flush-headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+						<p class="accordion_text">Поїздом</p>
+					</button>
+				</h2>
+				<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+					data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">Необхідно прибути до станції ”Яремче”
+
+						<ul>
+							<li>№15/16 Харків – Рахів</li>
+							<li>№55/56 Київ – Рахів,</li>
+							<li>№25/26 Одеса – Рахів,</li>
+							<li>№130/129 Кременчук – Ворохта (з групою причіпних вагонів Полтава – Ворохта).</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="cards row d-flex justify-content-center">
+		<div class="card card1" style="width: 18rem;">
+			<img src="/src/main/resources/static/img/logo.png" class="card-img-top  col-4" alt="...">
+			<div class="card-body">
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+					card's
+					content.</p>
+			</div>
+		</div>
+	
+		<div class="card card2 " style="width: 18rem;">
+			<img src="/src/main/resources/static/img/logo.png" class="card-img-top  col-4" alt="...">
+			<div class="card-body">
+				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+					card's
+					content.</p>
+			</div>
+		</div>
+	</div>
+	<div class="creator-part">
+		<div class="copyright-text">
+			<p>Copyright &copy; 2022. PEAKS. All Rights Reserved</p>
 		</div>
 	</div>
 </body>
