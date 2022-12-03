@@ -1,0 +1,53 @@
+.font-Source-Serif-Pro {
+  font-family: "Source Serif Pro", serif;
+}
+
+.navbarstyle {
+  opacity: 0.96;
+}
+
+.price_button,
+.location_button,
+.abonement_button,
+.more_dropdown {
+  color: black;
+  font-size: 35px;
+  font-family: "Source Serif Pro", serif;
+  padding: 0 10px;
+}
+
+.dropdown-menu li {
+  font-size: 23px;
+}
+
+/* common styles */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* footer */
+
+.creator-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  padding: 0 4rem;
+}
+
+.copyright-text {
+  font-size: 1.3rem;
+  color: #aaa;
+}
+
+.text-right {
+  font-size: 1.4rem;
+  color: #bbb;
+}

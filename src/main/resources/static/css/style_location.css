@@ -65,26 +65,6 @@ body {
 
 /* end of location heading */
 
-/* footer */
-
-.creator-part {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #111;
-  padding: 0 4rem;
-}
-
-.copyright-text {
-  font-size: 1.3rem;
-  color: #aaa;
-}
-
-.text-right {
-  font-size: 1.4rem;
-  color: #bbb;
-}
-
 .navigator {
   font-family: "Josefin Sans", sans-serif;
   font-size: 4rem;
@@ -217,7 +197,6 @@ body {
 }
 
 .cards{
-
   width: 100%;
 }
 
