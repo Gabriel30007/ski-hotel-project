@@ -41,11 +41,17 @@ public class UserController {
 
         return "login";
     }
+
     @RequestMapping(value ="/main_page", method = RequestMethod.GET)
     public ModelAndView welcome() {
         ModelAndView map = new ModelAndView("main_page");
         return map;
     }
 
+    @RequestMapping(value ="/location", method = RequestMethod.GET)
+    public ModelAndView location() {
+        ModelAndView map = new ModelAndView("location");
+        return map;
+    }
 
 }
