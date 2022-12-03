@@ -65,26 +65,6 @@ body {
 
 /* end of location heading */
 
-/* footer */
-
-.creator-part {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #111;
-  padding: 0 4rem;
-}
-
-.copyright-text {
-  font-size: 1.3rem;
-  color: #aaa;
-}
-
-.text-right {
-  font-size: 1.4rem;
-  color: #bbb;
-}
-
 .navigator {
   font-family: "Josefin Sans", sans-serif;
   font-size: 4rem;
@@ -93,7 +73,7 @@ body {
 }
 
 .navigator_button {
-    font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
 }
 
@@ -103,7 +83,7 @@ body {
   height: 40px;
   padding: 10px 25px;
   border: 2px solid #555;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
@@ -112,12 +92,10 @@ body {
   display: inline-block;
 }
 
-
-
 .btn-6 {
-    font-family: "Source Serif Pro", serif;
+  font-family: "Source Serif Pro", serif;
   font-size: 19px;
-   background: #555;
+  background: #555;
   color: #fff;
   line-height: 42px;
   padding: 0;
@@ -147,7 +125,7 @@ body {
   bottom: 0;
   transition: all 500ms ease;
 }
-.btn-6:hover{
+.btn-6:hover {
   color: #555;
   background: transparent;
 }
@@ -184,4 +162,44 @@ body {
 }
 .btn-6 span:hover:after {
   width: 100%;
+}
+
+.photo {
+  width: 100%;
+}
+
+.accordion,
+.accordion_text {
+  font-size: 24px;
+}
+
+.accordion {
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.creator-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  padding: 0 4rem;
+}
+
+.copyright-text {
+  font-size: 1.3rem;
+  color: #aaa;
+}
+
+.text-right {
+  font-size: 1.4rem;
+  color: #bbb;
+}
+
+.cards{
+  width: 100%;
+}
+
+.card1{
+  padding: 30px;
 }
