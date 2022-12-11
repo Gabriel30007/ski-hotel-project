@@ -55,6 +55,9 @@
                         <li><a class="dropdown-item" href="/boots-registration">boots add</a></li>
                         <li><a class="dropdown-item" href="/poles-registration">poles add</a></li>
                         <li><a class="dropdown-item" href="/skiing-registration">Skiing</a></li>
+                        <li><a class="dropdown-item" href="/bootsBuy">Boots buy</a></li>
+                        <li><a class="dropdown-item" href="/polesBuy">Poles buy</a></li>
+                        <li><a class="dropdown-item" href="/skiingBuy">Skiing buy</a></li>
                     </ul>
                 </li>
             </ul>

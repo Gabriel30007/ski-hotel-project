@@ -1,6 +1,8 @@
 package ua.lviv.nltu.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -13,6 +15,7 @@ import ua.lviv.nltu.DTO.BootsDtoHelper;
 import ua.lviv.nltu.domain.Boots;
 import ua.lviv.nltu.domain.User;
 import ua.lviv.nltu.service.BootsService;
+import ua.lviv.nltu.service.UserService;
 
 import javax.validation.Valid;
 import java.io.IOException;
@@ -21,6 +24,8 @@ import java.io.IOException;
 public class BootsController {
     @Autowired
     private BootsService bootsService;
+    @Autowired
+    private UserService userService;
 
     @RequestMapping(value ="/boots-registration", method = RequestMethod.GET)
     public ModelAndView BootsView() {
@@ -34,5 +39,12 @@ public class BootsController {
 
         bootsService.save(BootsDtoHelper.createBoots(image,price,size));
         return new ModelAndView("redirect:/main_page");
+    }
+
+    @RequestMapping(value ="/bootsBuy", method = RequestMethod.GET)
+    public ModelAndView BootsBuy() {
+        ModelAndView map = new ModelAndView("bootsBuying");
+        map.addObject("boots",bootsService.getAllMembers());
+        return map;
     }
 }

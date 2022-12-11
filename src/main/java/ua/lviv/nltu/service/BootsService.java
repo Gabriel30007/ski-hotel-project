@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import ua.lviv.nltu.dao.BootsRepository;
 import ua.lviv.nltu.domain.Boots;
 
+import java.util.List;
+
 @Service
 public class BootsService {
     @Autowired
@@ -12,5 +14,8 @@ public class BootsService {
 
     public void save(Boots boots){
         bootsRepository.save(boots);
+    }
+    public List<Boots> getAllMembers(){
+        return bootsRepository.findAll();
     }
 }

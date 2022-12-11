@@ -50,9 +50,12 @@
                 <li class="nav-item dropdown more_dropdown mx-auto pb-lg-0 pb-2">
                     <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
                     <ul class="dropdown-menu dropdown-menu-end text-center text-lg-start">
-                        <li><a class="dropdown-item" href="/boots-registration">boots add</a></li>
-                        <li><a class="dropdown-item" href="/poles-registration">poles add</a></li>
-                        <li><a class="dropdown-item" href="/skiing-registration">Skiing</a></li>
+                        <li><a class="dropdown-item" href="/boots-registration">Boots add</a></li>
+                        <li><a class="dropdown-item" href="/poles-registration">Poles add</a></li>
+                        <li><a class="dropdown-item" href="/skiing-registration">Skiing add</a></li>
+                        <li><a class="dropdown-item" href="/bootsBuy">Boots buy</a></li>
+                        <li><a class="dropdown-item" href="/polesBuy">Poles buy</a></li>
+                        <li><a class="dropdown-item" href="/skiingBuy">Skiing buy</a></li>
                     </ul>
                 </li>
             </ul>

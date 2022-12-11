@@ -31,4 +31,13 @@ public class SkiingController {
         skiingService.save(SkiingDto.createBoots(image,price));
         return new ModelAndView("redirect:/main_page");
     }
+    @RequestMapping(value ="/skiingBuy", method = RequestMethod.GET)
+    public ModelAndView SkiingBuy() {
+        ModelAndView map = new ModelAndView("skiingBuying");
+        map.addObject("skiing", skiingService.getAllMembers());
+        return map;
+    }
+
+
+
 }
