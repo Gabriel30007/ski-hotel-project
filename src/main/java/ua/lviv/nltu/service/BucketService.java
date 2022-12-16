@@ -5,7 +5,10 @@ import org.springframework.stereotype.Service;
 import ua.lviv.nltu.dao.BucketRepository;
 import ua.lviv.nltu.domain.Boots;
 import ua.lviv.nltu.domain.Bucket;
+import ua.lviv.nltu.domain.Hotel;
 import ua.lviv.nltu.domain.Skiing;
+
+import java.util.List;
 
 @Service
 public class BucketService {
@@ -18,5 +21,7 @@ public class BucketService {
     public Bucket FindById(int id){
         return (Bucket) bucketRepository.findAllById(id);
     }
-
+    public List<Bucket> getAllMembers(){
+        return bucketRepository.findAll();
+    }
 }
