@@ -90,9 +90,11 @@
                             </div>
                             <div class="card-footer p-4 pt-1 border-top-0 bg-transparent">
                                 <div class="text-center">
-                                    <a class="btn btn-outline-secondary mt-auto fs-5" href="#">
-                                        Додати у кошик
-                                    </a>
+                                    <form:form action="${contextPath}/BootsToBucket" method="POST" enctype="multipart/form-data">
+                                        <input type="hidden" value="${currentBoots.id}"
+                                               class="form-control" name="bootsId">
+                                        <input class="btn btn-outline-secondary mt-auto fs-5"  type="submit" value="Submit" />
+                                    </form:form>
                                 </div>
                             </div>
                         </div>

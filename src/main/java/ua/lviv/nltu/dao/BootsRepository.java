@@ -4,4 +4,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import ua.lviv.nltu.domain.Boots;
 
 public interface BootsRepository extends JpaRepository<Boots,Integer> {
+    Object findAllById(int id);
 }

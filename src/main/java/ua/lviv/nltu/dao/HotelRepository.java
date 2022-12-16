@@ -5,4 +5,5 @@ import ua.lviv.nltu.domain.Hotel;
 
 
 public interface HotelRepository extends JpaRepository<Hotel,Integer> {
+    Object findAllById(int id);
 }

@@ -13,8 +13,11 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import ua.lviv.nltu.DTO.BootsDtoHelper;
 import ua.lviv.nltu.domain.Boots;
+import ua.lviv.nltu.domain.Bucket;
+import ua.lviv.nltu.domain.Skiing;
 import ua.lviv.nltu.domain.User;
 import ua.lviv.nltu.service.BootsService;
+import ua.lviv.nltu.service.BucketService;
 import ua.lviv.nltu.service.UserService;
 
 import javax.validation.Valid;
@@ -26,6 +29,8 @@ public class BootsController {
     private BootsService bootsService;
     @Autowired
     private UserService userService;
+    @Autowired
+    private BucketService bucketService;
 
     @RequestMapping(value ="/boots-registration", method = RequestMethod.GET)
     public ModelAndView BootsView() {
@@ -46,5 +51,17 @@ public class BootsController {
         ModelAndView map = new ModelAndView("bootsBuying");
         map.addObject("boots",bootsService.getAllMembers());
         return map;
+    }
+    @RequestMapping(value = "/BootsToBucket", method = RequestMethod.POST)
+    public ModelAndView saveToBucket(@RequestParam int bootsId) throws IOException {
+        Boots boots= bootsService.FindById(bootsId);
+        Bucket bucket=new Bucket();
+        bucket.setBoots(boots);
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        String userEmail = auth.getName();
+        User user = userService.findByEmail(userEmail);
+        bucket.setUser(user);
+        bucketService.save(bucket);
+        return new ModelAndView("redirect:/main_page");
     }
 }

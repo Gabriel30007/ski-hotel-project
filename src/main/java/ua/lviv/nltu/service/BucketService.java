@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import ua.lviv.nltu.dao.BucketRepository;
 import ua.lviv.nltu.domain.Boots;
 import ua.lviv.nltu.domain.Bucket;
+import ua.lviv.nltu.domain.Skiing;
 
 @Service
 public class BucketService {
@@ -13,6 +14,9 @@ public class BucketService {
 
     public void save(Bucket bucket){
         bucketRepository.save(bucket);
+    }
+    public Bucket FindById(int id){
+        return (Bucket) bucketRepository.findAllById(id);
     }
 
 }
