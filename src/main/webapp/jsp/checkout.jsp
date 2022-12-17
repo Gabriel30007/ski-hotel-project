@@ -38,9 +38,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item price_button mx-auto">
-                    <a class="nav-link" href="#">Ціна</a>
-                </li>
                 <li class="nav-item location_button mx-auto">
                     <a class="nav-link active" href="/location">Локація</a>
                 </li>
@@ -89,22 +86,11 @@
                                     <img class="card-img-top" src="data:image/jpg;base64, ${obj.encodedImage}" alt="..."/>
                             </div>
                             <div class="col-md-3 col-lg-3 col-xl-3">
-                                <p class="lead fw-normal mb-2">title</p>
-                            </div>
-                            <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                                <button class="btn btn-link px-2"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                    <i class="fs-5 bi bi-dash-lg"></i>
-                                </button>
-                                <input min="0" name="quantity" value="2" type="number"
-                                       class="form-control form-control-sm" />
-                                <button class="btn btn-link px-2"
-                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                    <i class="fs-5 bi bi-plus-lg"></i>
-                                </button>
+                                <c:catch var="exception"> <p class="lead fw-normal mb-2">${obj.height}</p></c:catch>
+                                <c:catch var="exception"><p class="lead fw-normal mb-2">${obj.size}</p></c:catch>
                             </div>
                             <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
-                                <h5 class="mb-0">100₴</h5>
+                                <h5 class="mb-0">${obj.price}$</h5>
                             </div>
                             <div class="col-md-1 col-lg-1 col-xl-1 text-end">
                                 <a href="#!" class="text-danger"><i class="fs-5 bi bi-trash-fill"></i></a>
@@ -115,31 +101,38 @@
                 <!-- КІНЕЦЬ КАРТКИ З ТОВАРОМ -->
                 </c:forEach>
             </c:if>
+                <form:form action="${contextPath}/HotelReg" method="POST" enctype="multipart/form-data">
                 <div class="card mb-4">
                     <div class="card-body d-flex flex-row">
                         <div class="form-outline flex-fill">
-                            <input type="text" id="abonement_input" class="form-control form-control-lg" />
+                            <input type="text" id="abonement_input" class="form-control form-control-lg" name="hotelPrice" />
                             <label class="form-label" for="abonement_input">Абонемент</label>
                         </div>
-                        <button type="button"
-                                class="btn btn-outline-warning btn-lg ms-3 align-self-start">Підтвердити</button>
+
                     </div>
                 </div>
 
                 <div class="card mb-4">
                     <div class="card-body p-4">
                         <p class="mb-0 me-2 d-flex justify-content-between align-items-center">
-                            <span class="text-muted">Загальна вартість:</span>
-                            <span class="lead fw-normal">150₴</span>
+                            <span class="text-muted">Загальна вартість без абонементу:</span>
+<%--                            <c:set var = "priceAll" scope = "session" value = "${currentBucketObj.getPrice()}"/>--%>
+                            <span class="lead fw-normal">${price}$</span>
                         </p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="card-body d-grid col-12">
-                        <button type="button" class="btn btn-warning btn-block btn-lg">Оплатити</button>
+
+                            <input type="hidden" value="${hotelPrice}"
+                                   class="form-control" name="hotelPrice">
+                            <input class="btn btn-warning btn-block btn-lg"  type="submit" value="Оплатити" />
+
+
                     </div>
                 </div>
+                </form:form>
             </div>
         </div>
     </div>

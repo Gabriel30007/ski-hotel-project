@@ -8,9 +8,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import ua.lviv.nltu.dao.UserRepository;
 import ua.lviv.nltu.domain.User;
-import ua.lviv.nltu.security.CustomUserDetails;
-
-
+import org.springframework.context.annotation.Bean;
 import java.util.Collections;
 import java.util.Optional;
 @Service("customUserDetailsService")

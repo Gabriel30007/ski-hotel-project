@@ -98,6 +98,16 @@ public class Bucket {
         this.hotel = hotel;
     }
 
+    public int price(){
+        int price=0;
+        if(this.boots!=null)
+           price+=boots.getPrice();
+        if(this.poles!=null)
+            price+=poles.getPrice();
+        if(this.skiing!=null)
+            price+=skiing.getPrice();
+        return price;
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

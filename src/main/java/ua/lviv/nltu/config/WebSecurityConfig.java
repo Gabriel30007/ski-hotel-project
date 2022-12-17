@@ -1,6 +1,7 @@
 package ua.lviv.nltu.config;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -38,14 +39,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/").permitAll()
-                .antMatchers("/main_page").access("hasRole('USER') or hasRole('ADMINISTRATOR')")
-                .antMatchers("/bootsRegistration").access("hasRole('ADMINISTRATOR')")
-                .antMatchers("/polesRegistration").access("hasRole('ADMINISTRATOR')")
-                .antMatchers("/skiingRegistration").access("hasRole('ADMINISTRATOR')")
-                .antMatchers("/checkout").access("hasRole('USER')")
-                .antMatchers("/bootsBuying").access("hasRole('USER')")
-                .antMatchers("/polesBuying").access("hasRole('USER')")
-                .antMatchers("/skiingBuying").access("hasRole('USER')")
+                .antMatchers("/main_page").permitAll()
                 .anyRequest().permitAll().and()
                 .formLogin().loginPage("/login")
                 .defaultSuccessUrl("/main_page").usernameParameter("email").passwordParameter("password").and()

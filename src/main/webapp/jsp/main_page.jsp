@@ -3,7 +3,7 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags"%>
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <html lang="en">
 <!DOCTYPE html>
@@ -38,9 +38,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item price_button mx-auto">
-                    <a class="nav-link" href="#">Ціна</a>
-                </li>
                 <li class="nav-item location_button mx-auto">
                     <a class="nav-link active" href="/location">Локація</a>
                 </li>
@@ -50,9 +47,9 @@
                 <li class="nav-item dropdown more_dropdown mx-auto pb-lg-0 pb-2">
                     <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
                     <ul class="dropdown-menu dropdown-menu-end text-center text-lg-start">
-                        <li><a class="dropdown-item" href="/boots-registration">Boots add</a></li>
-                        <li><a class="dropdown-item" href="/poles-registration">Poles add</a></li>
-                        <li><a class="dropdown-item" href="/skiing-registration">Skiing add</a></li>
+                        <li><a class="dropdown-item" href="/boots-registration">boots add</a></li>
+                        <li><a class="dropdown-item" href="/poles-registration">poles add</a></li>
+                        <li><a class="dropdown-item" href="/skiing-registration">Skiing</a></li>
                         <li><a class="dropdown-item" href="/bootsBuy">Boots buy</a></li>
                         <li><a class="dropdown-item" href="/polesBuy">Poles buy</a></li>
                         <li><a class="dropdown-item" href="/skiingBuy">Skiing buy</a></li>

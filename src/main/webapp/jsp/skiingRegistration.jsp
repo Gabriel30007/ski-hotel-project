@@ -40,14 +40,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item price_button mx-auto">
-                    <a class="nav-link" href="#">Ціна</a>
-                </li>
                 <li class="nav-item location_button mx-auto">
                     <a class="nav-link active" href="/location">Локація</a>
                 </li>
                 <li class="nav-item abonement_button mx-auto">
-                    <a class="nav-link" href="#">Абонемент</a>
+                    <a class="nav-link" href="/hotel-registration">Абонемент</a>
                 </li>
                 <li class="nav-item dropdown more_dropdown mx-auto pb-lg-0 pb-2">
                     <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
