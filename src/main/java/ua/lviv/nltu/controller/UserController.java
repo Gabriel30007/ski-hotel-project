@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
+import ua.lviv.nltu.domain.Boots;
 import ua.lviv.nltu.domain.User;
 import ua.lviv.nltu.service.UserService;
 
@@ -22,7 +23,7 @@ public class UserController {
 
 
     @RequestMapping(value = "/registration", method = RequestMethod.POST)
-    public ModelAndView registration(@RequestParam String email,
+    public String registration(      @RequestParam String email,
                                      @RequestParam String firstName,
                                      @RequestParam String lastName,
                                      @RequestParam String password
@@ -30,18 +31,20 @@ public class UserController {
 
         userService.save(new User(email, firstName, lastName, password));
 
-        return new ModelAndView("redirect:/main_page");
+        return ("redirect:/login");
     }
 
     @RequestMapping(value = {"/", "/login"}, method = RequestMethod.GET)
-    public String login(Model model, String error, String logout) {
+    public ModelAndView login(Model model, String error, String logout) {
+        ModelAndView map=new ModelAndView("login");
+        map.addObject( "user", new User());
         if (error != null)
             model.addAttribute("error", "Your username and password is invalid.");
 
         if (logout != null)
             model.addAttribute("message", "You have been logged out successfully.");
 
-        return "login";
+        return map;
     }
 
     @RequestMapping(value ="/main_page", method = RequestMethod.GET)
@@ -55,9 +58,4 @@ public class UserController {
         ModelAndView map = new ModelAndView("location");
         return map;
     }
-
-
-
-
-
 }

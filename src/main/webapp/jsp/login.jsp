@@ -64,7 +64,7 @@
                 </fieldset>
                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
                 <button type="submit" class="btn-login">Login</button>
-                <a href="${contextPath}/registration"></a>
+
             </form>
         </div>
 
@@ -73,8 +73,10 @@
                 Sign Up
                 <span class="underline"></span>
             </button>
-            <form method="POST" action="${contextPath}/registration" class="form form-signup">
-                <fieldset>
+
+                <form:form method="POST" action="${contextPath}/registration" enctype="multipart/form-data">
+                    <div class="form form-signup">
+                <fieldset >
                     <legend>Please, enter your email, password and password confirmation for sign
                         up.
                     </legend>
@@ -97,7 +99,8 @@
 
                 </fieldset>
                 <button type="submit" class="btn-signup">Continue</button>
-
+                    </div>
+                </form:form>
             </form>
         </div>
     </div>

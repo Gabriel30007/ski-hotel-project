@@ -45,7 +45,7 @@
                     <a class="nav-link" href="/hotel-registration">Абонемент</a>
                 </li>
                 <li class="nav-item dropdown more_dropdown mx-auto pb-lg-0 pb-2">
-                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown">Меню</a>
                     <ul class="dropdown-menu dropdown-menu-end text-center text-lg-start">
                         <li><a class="dropdown-item" href="/boots-registration">Boots add</a></li>
                         <li><a class="dropdown-item" href="/poles-registration">Poles add</a></li>
